@@ -1,4 +1,6 @@
-navigator.bluetooth.requestDevice({
+
+function run(){
+    navigator.bluetooth.requestDevice({
     acceptAllDevices: true,
     optionalServices: ['battery_service']
   })
@@ -6,3 +8,4 @@ navigator.bluetooth.requestDevice({
   .catch(error => { console.log(error); });
   
 //   There is nothing at the moment &#129299; 
+}
